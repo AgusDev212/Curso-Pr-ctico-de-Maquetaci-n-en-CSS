@@ -84,7 +84,7 @@ header {
 .main-container {
     width: 100%;
     height: 100%;
-    background-image: url('/assets/img/robot.jpg');
+    background-image: url('./assets/img/robot.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
