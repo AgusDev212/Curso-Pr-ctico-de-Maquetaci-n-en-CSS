@@ -1,0 +1,218 @@
+
+body a{
+    text-decoration: none;
+}
+/* inicio de header*/
+header {
+    width: 100%;
+    height: 50px;
+}
+.header-container-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--verde);
+    padding-right: 40px;
+}
+
+.header-container-icons a {
+    
+    color: white;
+    margin-right: 10px;
+}
+
+/* inicio de bar-nav*/
+.bar-nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.logo img{
+    height: 80px;
+    margin-left: 50px;
+}
+.container a {
+    text-decoration: none;
+}
+.profile {
+    padding-right: 33px;
+}
+.profile a{
+    font-size: 16px;
+    margin-right: 50px;
+    color: black;
+    border-bottom: 1px solid black;
+   
+}
+/* inicio de bar-nav*/
+.bar-nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.logo img{
+    height: 80px;
+    margin-left: 50px;
+}
+.container  a {
+    text-decoration: none;
+    
+}
+.profile a{
+    font-size: 16px;
+    margin-right: 50px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+/* inicio del main */
+.main-blog {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.main-blog-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-blog-img img {
+    width: 90%;
+    height: auto;
+}
+.article-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px 0 80px;
+    > p {
+        font-size: 2.0rem;
+        font-weight: bold;
+        margin: 30px 0 15px 0;
+        border-bottom: 2px solid var(--plomo);
+        padding-bottom: 15px;
+    }    
+
+    .article-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+
+    .article-text {
+        text-align: justify;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    > article {
+        margin-bottom: 50px;
+    }
+}
+/*  comienzo del footer */
+.footer-blog {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--plomo);
+    border-bottom: 20px solid var(--verde);
+    
+    .section {
+        width: 50%;
+        padding: 0 10% 0 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section img {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        
+    }
+    .section div {
+        margin-left: 15px;
+    }
+}
+
+/* medias responsives */
+@media (max-width: 768px) {
+    .logo img{
+        height: 50px;
+        margin-left: 2px;
+    }
+    .profile a {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .header-container-icons a {
+        margin-right: 5px;
+    }
+    .main-container {
+        background-size: cover;
+    }
+}
+@media (max-width: 425px) {
+    .article-container {
+        padding: 0 20px 0 20px;
+        > p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }    
+    
+        .article-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-bottom: 15px;
+        }
+        .article-text {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+    }
+    .footer-blog {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center;
+        justify-content: center;
+         */
+        
+        .section {
+            width: 50%;
+            padding: 0 10% 0 10%;
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+        }
+        
+        .section img {
+            width: 25px;
+            height: 25px;
+            background-size: cover;
+            
+        }
+        .section div {
+            margin-left: 15px;
+        }
+        .section div p {
+            display: none;
+        }
+    }
+}

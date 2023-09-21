@@ -1,0 +1,334 @@
+
+/* inicio de bar-nav*/
+.bar-nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.logo img{
+    height: 80px;
+    margin-left: 50px;
+}
+.profile {
+    padding-right: 33px;
+}
+.profile a{
+    font-size: 16px;
+    margin-right: 50px;
+    color: black;
+    border-bottom: 1px solid black;
+   
+}
+/*  <<<<<<<<<<< INDEX.HTML >>>>>>>>>>> */
+.container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1440px;
+    /* min-width: 350px; */
+
+}
+/* inicio de header*/
+header {
+    width: 100%;
+    height: 50px;
+}
+.header-container-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--verde);
+    padding-right: 40px;
+}
+
+.header-container-icons a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+/* inicio de bar-nav*/
+.bar-nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.logo img{
+    height: 80px;
+    margin-left: 50px;
+}
+.container a {
+    text-decoration: none;
+}
+.profile {
+    padding-right: 33px;
+}
+.profile a{
+    font-size: 16px;
+    margin-right: 50px;
+    color: black;
+    border-bottom: 1px solid black;
+   
+}
+
+/* inicio de main*/
+.main-profile {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--plomo);
+    padding: 20px 150px 20px 150px;
+    gap: 0;
+}
+.main-profile-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-profile-img img{
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid var(--verde);
+    margin-top: -40px;
+}
+.main-profile-proyectos {
+    margin-top: -20px;
+}
+.main-profile-proyectos .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+} 
+.main-profile-proyectos p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+} 
+.main-profile-proyectos a {
+    padding: 10px;
+    background-color: white;
+    border: 2px solid var(--verde);
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+.profile-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+.main-proyects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 150px 0 150px;
+    gap: 20px;
+    border-top: 2px solid var(--plomo);
+    /* border-bottom: 30px solid var(--verde); */
+}
+.main-proyects img{
+    width: 250px;
+}
+.main-proyects .proyect {
+    margin-bottom: 30px;
+}
+.main-proyects .proyect h3 {
+    font-size: small;
+    margin: 10px 0 10px 0;
+}
+.main-proyects .proyect p {
+    margin-bottom: 25px;
+    text-align: justify;
+}
+.main-proyects .proyect a {
+    padding: 8px;
+    background-color: white;
+    border: 2px solid var(--verde); 
+    margin-top: 30px;
+    font-size: 1.4rem;
+    color: blue;
+}
+
+/*  comienzo del footer */
+.footer-profile {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--plomo);
+    border-bottom: 20px solid var(--verde);
+    
+    .section {
+        width: 50%;
+        padding: 0 10% 0 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section img {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        
+    }
+    .section div {
+        margin-left: 15px;
+    }
+}
+
+
+/* medias responsives */
+@media (max-width: 768px) {
+    .logo img{
+        height: 50px;
+        margin-left: 2px;
+    }
+    .profile a {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .header-container-icons a {
+        margin-right: 5px;
+    }
+    .main-container {
+        background-size: cover;
+    }
+
+    .main-profile {
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        justify-content: start;
+        align-items:self-start;
+        padding: 20px 30px 0px 30px ;
+    }
+    .main-profile-proyectos {
+        margin-top: 0px;
+    }
+    .main-profile-proyectos .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    } 
+    .main-profile-proyectos p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: justify;
+    }
+
+    .main-proyects {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+}
+@media (max-width: 425px) {
+    .main-container {
+        background-size: contain;
+        background-color: black;
+    }
+    .paragraft {
+        font-size: 30px;
+    }
+    .header-container-icons a {
+        margin-right: 0;
+    }
+
+    .main-proyects {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .main-profile {
+        width: 100%;
+        height: 460px;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        padding: 10px;
+        gap: 0;
+    }
+    .main-profile-proyectos {
+        margin-top: 20px;
+    }
+    .main-proyects .proyect img {
+        width: 250px;
+    }
+    .main-profile-proyectos .title {
+        font-size: 1.4rem;
+        font-weight: bold;
+    } 
+    .main-profile-proyectos p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+    .main-proyects {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20pxpx auto 0 auto;
+        .post img {
+            width: 300px;
+        }
+    }
+   
+    .footer-profile {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        .section {
+            width: 50%;
+            padding: 0 10% 0 10%;
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+        }
+        
+        .section img {
+            width: 25px;
+            height: 25px;
+            background-size: cover;
+            
+        }
+        .section div {
+            margin-left: 15px;
+        }
+        .section div p {
+            display: none;
+        }
+    }
+}
